@@ -2,7 +2,7 @@
 # cargo-chef and the Rust toolchain
 # https://www.lpalmieri.com/posts/fast-rust-docker-builds/
 ARG BUILDPLATFORM=linux/amd64
-FROM --platform=$BUILDPLATFORM lukemathwalker/cargo-chef:latest-rust-1.63.0 AS chef
+FROM --platform=$BUILDPLATFORM lukemathwalker/cargo-chef:latest-rust-1.65.0 AS chef
 WORKDIR /qdrant
 
 FROM chef AS planner
